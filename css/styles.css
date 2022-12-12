@@ -6,11 +6,16 @@
   --black-text: #000000;
   --bottom-contact-color: rgba(255, 255, 255, 0.6);
   --portfolio-filter: #f5f4fa;
+  --frame-shadow: #ececec;
 }
 
 body {
   color: var(--main-text-color);
   font-family: "Roboto", "Tahoma", sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .logo-black {
@@ -19,6 +24,9 @@ body {
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
+  display: flex;
+  left: 215px;
+  top: 24px;
 }
 
 .logo-white {
@@ -37,6 +45,23 @@ body {
   text-decoration: none;
 }
 
+.navigation-links {
+  display: flex;
+  position: absolute;
+  width: 254px;
+  left: 453px;
+  top: 32px;
+  margin-bottom: 32px;
+}
+
+.list-navi {
+  margin-right: 46px;
+}
+
+.list-navi:last-child {
+  margin-right: 0px;
+}
+
 .navigation-links .link {
   color: var(--main-text-color);
   font-weight: 500;
@@ -48,6 +73,21 @@ body {
 .navigation-links .link:hover,
 .navigation-links .link:focus {
   color: var(--accent-color);
+}
+
+.contact-links-top {
+  display: flex;
+  position: absolute;
+  left: 1078px;
+  top: 32px;
+}
+
+.list-contact {
+  margin-right: 50px;
+}
+
+.list-contact:last-child {
+  margin-right: 0px;
 }
 
 .contact-links-top .link {
@@ -170,4 +210,12 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.frame {
+  border: 1px solid var(--frame-shadow);
+}
+
+.container {
+  width: 1200px;
 }
