@@ -6,7 +6,6 @@
   --black-text: #000000;
   --bottom-contact-color: rgba(255, 255, 255, 0.6);
   --portfolio-filter: #f5f4fa;
-  --frame-shadow: #ececec;
 }
 
 body {
@@ -16,6 +15,13 @@ body {
 
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
 }
 
 .logo-black {
@@ -24,9 +30,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
-  display: flex;
-  left: 215px;
-  top: 24px;
+  margin-right: 93px;
 }
 
 .logo-white {
@@ -47,19 +51,14 @@ ul {
 
 .navigation-links {
   display: flex;
-  position: absolute;
-  width: 254px;
-  left: 453px;
-  top: 32px;
-  margin-bottom: 32px;
 }
 
-.list-navi {
-  margin-right: 46px;
-}
-
-.list-navi:last-child {
+.navigation-links:last-child {
   margin-right: 0px;
+}
+
+.list-navigation {
+  margin-right: 46px;
 }
 
 .navigation-links .link {
@@ -77,9 +76,6 @@ ul {
 
 .contact-links-top {
   display: flex;
-  position: absolute;
-  left: 1078px;
-  top: 32px;
 }
 
 .list-contact {
@@ -88,6 +84,10 @@ ul {
 
 .list-contact:last-child {
   margin-right: 0px;
+}
+
+.list-contact:first-child {
+  margin-left: 371px;
 }
 
 .contact-links-top .link {
@@ -212,10 +212,10 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.frame {
-  border: 1px solid var(--frame-shadow);
-}
-
-.container {
-  width: 1200px;
+.up-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 215px;
+  margin-top: 24px;
 }
